@@ -5,8 +5,11 @@
              Shell.NavBarIsVisible="false">
 
     <Grid>
-         <HorizontalStackLayout x:Name="fundo"
-         <Image Source=""
+         <Image Source="monte.jpg"
+                Aspect="Fil"/>
+         <Image Source="monumento.png"
+                Aspect="Fil"/>
+               
     </Grid>
 
 </ContentPage>
