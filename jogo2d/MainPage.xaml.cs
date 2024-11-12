@@ -3,22 +3,52 @@
 public partial class MainPage : ContentPage
 {
 	int count = 0;
+	bool etaMorto = false;
+	bool estaPulando = false;
+	const int tempoEntreFramea =25;
+	int Velocidade1 =0;
+	int Velocidade2 =0;
+	int Velocidade3 =0;
+	int Velocidade =0;
+	int AlturaJanela =0;
+
 
 	public MainPage()
 	{
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+    protected override void OnSizeAllocated(double w, double h)
+    {
+        base.OnSizeAllocated(w, h);
+		CorrigeTamanhoCenario(w, h);
+		CalculaVelocidade(w);
+    }
+	void CalculaVelocidade(double w)
 	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		Velocidade1=(int)(w*0.001);
+		Velocidade2=(int)(w*0.004);
+		Velocidade3=(int)(w*0.008);
+        Velocidade=(int)(w*0.01);
 	}
+
+	void CorrigeTamanhoCenario(double w, double h);
+	{
+		foreach (var a in hslayer1.Children)
+		(a as Image).WidthRquest=w;
+		foreach (var a in hslayer2.Children)
+		(a as Image).WidthRquest=w;
+		foreach (var a in hslayer3.Children)
+		(a as Image).WidthRquest=w;
+		foreach (var a in hslayerChao.Children)
+		(a as Image).WidthRquest=w;
+
+		hslayer1.widthReuest=w*1.5;
+		hslayer2.widthRequest=w*1.5;
+		hslayer3.widthRequest=w*1.5;
+		hslayerChao.widthRequest=w*1.5;
+
+	}
+
 }
 

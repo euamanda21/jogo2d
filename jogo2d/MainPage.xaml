@@ -5,11 +5,36 @@
              Shell.NavBarIsVisible="false">
 
     <Grid>
+         <HorizontalStackLayout x:Name="hslayer1">
          <Image Source="monte.jpg"
-                Aspect="Fil"/>
-         <Image Source="monumento.png"
-                Aspect="Fil"/>
-               
+                Aspect="Fill"/>
+         <Image Source="monte.jpg"
+                Aspect="Fill"/>
+         <Image Source="monte.jpg"
+                Aspect="Fill"/>
+         </HorizontalStackLayout>
+         
+         <HorizontalStackLayout x:Name="hslayer2">
+         <Image Source="munumento.jpg"/>
+         <Image Source="munumento.jpg"/>
+         <Image Source="munumento.jpg"/>
+         </HorizontalStackLayout>
+
+         <HorizontalStackLayout x:Name="hslayer3">
+         <Image Source="cerejeira2.png"/>
+         <Image Source="cerejeira2.png"/>
+         <Image Source="cerejeira2.png"/>
+         </HorizontalStackLayout>
+
+         <HorizontalStackLayout x:Name="hslayerChao">
+         <Image Source="chao2.jpg"
+                VerticalOptions="End"/>
+         <Image Source="chao2.jpg"
+                VerticalOptions="End"/>
+         <Image Source="chao2.jpg"
+                VerticalOptions="End"/>
+         </HorizontalStackLayout>
+              
     </Grid>
 
 </ContentPage>
