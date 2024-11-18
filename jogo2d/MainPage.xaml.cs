@@ -5,12 +5,22 @@ public partial class MainPage : ContentPage
 	int count = 0;
 	bool etaMorto = false;
 	bool estaPulando = false;
-	const int tempoEntreFramea =25;
+	bool estaNoChao =true;
+	bool estaNoAr =false;
+	bool estaPulando =false;
+	const int tempoEntreFrames =25;
+	const int forcaGravidade =6;
 	int Velocidade1 =0;
 	int Velocidade2 =0;
 	int Velocidade3 =0;
 	int Velocidade =0;
 	int AlturaJanela =0;
+	int tempoPulando =0;
+	int tempoNoAr =0;
+	const int forcaPulo =8;
+	const int maxTempoPulando =6;
+	const int maxTempoNoAr =4;
+
 
 
 	public MainPage()
