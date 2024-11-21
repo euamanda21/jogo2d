@@ -34,6 +34,10 @@
          <Image Source="chao2.jpg"
                 VerticalOptions="End"/>
          </HorizontalStackLayout>
+         
+         <Image Source="1.png"
+               x:Name="imgcachorro"
+               HeightRequest="100"/>
               
     </Grid>
 
