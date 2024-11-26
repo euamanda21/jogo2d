@@ -43,7 +43,7 @@ public class Animacao
             nomeArquivo=animacao3[frameAtual];
             tamanhoanimacao=animacao3.Count;
         }
-        compImagem.Source=ImageSource.FromFile(nomeArquivo);
+     
         frameAtual++;
         if(frameAtual >= tamanhoanimacao)
         {

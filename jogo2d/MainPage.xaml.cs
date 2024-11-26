@@ -92,7 +92,8 @@ public partial class MainPage : ContentPage
 	}
 	
 	void GerenciaCenario(HorizontalStackLayout hsl)
-	{
+	
+{
 		var view = (hsl.Children.First() as Image);
 		if(view.WidthRequest+hsl.TranslationX<0)
 		{
